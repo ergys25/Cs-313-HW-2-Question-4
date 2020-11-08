@@ -61,12 +61,21 @@ void stack::pop() {// remove the head node
 void stack::print() { // print all elements of the stack
     node *temp = head;
     int i = 0;
+    std::cout << "[      TOP     ] " << " " << std::endl;
     while (temp != NULL) {
-        std::cout << "Index: " << i << " " << temp->data << std::endl;
+        std::cout << "       [|] " << " " << std::endl;
+        std::cout << "       [|] " << " " << std::endl;
+        std::cout << "       [V] " << " " << std::endl;
+        std::cout << "[Index: " << i << " " << temp->data << "]" << std::endl;
         temp = temp->next;
         i++;
-    }//while
 
+
+    }//while
+    std::cout << "       [|] " << " " << std::endl;
+    std::cout << "       [|] " << " " << std::endl;
+    std::cout << "       [V] " << " " << std::endl;
+    std::cout << "[      TAIL     ] " << " " << std::endl;
 }//print
 
 void stack::set(int d,
